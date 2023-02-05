@@ -135,11 +135,11 @@ input, select, textarea {
 		}
 
 	a {
-		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+	/*	-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		text-decoration: none;
+	*/	text-decoration: none;
 		color: #585858;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
@@ -793,7 +793,7 @@ input, select, textarea {
 		#header .logo {
 			display: block;
 			border-bottom: 0;
-			color: inherit;
+			color: #a5a58d;
 			font-weight: 600;
 			letter-spacing: 0.05em;
 			margin: 0 0 2em 0;
@@ -869,11 +869,11 @@ input, select, textarea {
 					}
 
 						#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
-							-moz-transition: opacity 0.2s ease;
+						/*	-moz-transition: opacity 0.2s ease;
 							-webkit-transition: opacity 0.2s ease;
 							-ms-transition: opacity 0.2s ease;
 							transition: opacity 0.2s ease;
-							content: '';
+							*/content: '';
 							display: block;
 							position: absolute;
 							top: 0;
@@ -906,7 +906,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding: 4em 0 0.1em 0 ;
+				padding:0.5em 0 0.1em 0 ;
 			}
 
 				#header nav {
@@ -1123,11 +1123,11 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		/*-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		width: 100%;
+	*/	width: 100%;
 		max-width: 100%;
 		margin-top: 2rem;
 		text-align: center;
