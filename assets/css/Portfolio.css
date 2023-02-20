@@ -149,7 +149,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffcc5f !important;
+			color: #ffcc5f;
 		}
 
 	strong, b {
@@ -162,7 +162,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 0em 0;
-		text-align: left;
+		text-align: center;
 	}
 
 	h1 {
@@ -174,7 +174,7 @@ input, select, textarea {
 		text-align: center;
 		border-bottom: 0.5px solid #c9c9c9;
 		margin: 10px 0 20px;
-		color: #a5a58d;
+		color: #a5a58d !important;
 		font-size: 1.2em;
 	}
 
@@ -234,11 +234,28 @@ input, select, textarea {
 		font-size: 1.5em;
 	}
 
-		h2 a, h3 a, h4 a, h5 a, h6 a {
+		h1, h2 a, h3 a, h4 a, h6 a {
 			color: inherit;
 		}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		h5 a, img a {
+		    color: #585858 !important;
+		    opacity: 0.5;
+		}
+
+		h5 a:hover {
+		    color: #585858 !important;
+		    opacity: 0.5;
+		    cursor: pointer;
+		}
+
+		img a:hover {
+		    color: #585858 !important;
+		    opacity: 0.5;
+		    cursor: pointer;
+		}
+
+		h1 a, h2 a, h3 a, h4 a, h6 a {
 			color: inherit;
 			text-decoration: none;
 		}
@@ -1205,6 +1222,10 @@ input, select, textarea {
 			font-size: 0.8;
 		}
 
+        #header .logo:hover {
+		    color: #ffcc5f !important;
+		    }
+
 			#header .logo > * {
 				display: inline-block;
 				vertical-align: middle;
@@ -1765,10 +1786,6 @@ input, select, textarea {
     border: 0;
 }
 
-.card:hover {
-color: #ffffff !important;
-}
-
 .card-header {
     border: 0;
     margin: 0 0 0em 0;
@@ -1783,9 +1800,16 @@ color: #ffffff !important;
 		font-size: 1.1em;
 		margin-top: -1.5rem;
 }
-
 .card-body {
     border: 1;
+    color: #585858 !important;
+    opacity: 0.6;
+}
+
+.card-body:hover {
+    color: #585858 !important;
+    opacity: 1;
+    transition:all 0.6s;
 }
 
 .card-text {
@@ -1801,18 +1825,21 @@ justify-content: center;
     width: 100%;
 }
 
-.card-img:hover {
-    color: #ffffff !important;
-    opacity: 0.5;
-}
-
 .card-footer{
     border: 0;
     width: 100% !important;
     background-color: transparent !important;
 }
 
+.card-footer:hover {
+	cursor: pointer;
+	color: #585858 !important;
+	}
 
+.card-title:hover {
+	cursor: pointer;
+	color: #585858 !important;
+	}
 
 /* -----------------------------------------------
                     BUTTONS
@@ -1862,11 +1889,13 @@ justify-content: center;
 	  width: 100%;
 	  height: 100%;
 	  background-color: rgba(0,0,0,0.3);
+	  padding: 30px;
+	  vertical-align: middle;
 	}
 
 	.modal-dialog {
 	  max-width: 1000px;
-	  max-height: calc(100vh - 210px);
+	  height: calc(100vh - 210px);
 	}
 
 /* Modal Content) */
@@ -1877,6 +1906,8 @@ justify-content: center;
 	  width: 90%;
 	  max-width: 1000px;
 	  display: block;
+	  vertical-align: middle;
+	  align-content: center;
 	}
 
 	.modal-header {
@@ -1893,7 +1924,7 @@ justify-content: center;
 		width: 100%;
 		font-size: 1.3em;
 		border: 0;
-		color: 585858;
+		color: #585858;
 	}
 
 	.modal-body {
@@ -1927,10 +1958,21 @@ justify-content: center;
     object-position: center;
 }
 
-.carousel-inner > .item > img {
-  width:100%
-  height:360px;
+.carousel-item img {
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  height: 50vh;
 }
+
+.carousel-caption {
+  color: #585858;
+  font-size: 1.1em;
+  text-align: center;
+  float: bottom;
+  margin: 0 0 0em 0;
+  width: 90%;
+  }
 
 .carousel-indicators {
   bottom: -35px;
