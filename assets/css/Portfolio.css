@@ -1894,7 +1894,7 @@ justify-content: center;
 	}
 
 	.modal-dialog {
-	  max-width: 1000px;
+	  max-width: 960px;
 	  height: calc(100vh - 210px);
 	}
 
@@ -1903,8 +1903,8 @@ justify-content: center;
 	  background-color: white;
 	  margin: auto;
 	  border: 2px solid #888;
-	  width: 90%;
-	  max-width: 1000px;
+	  width: 95%;
+	  max-width: 960px;
 	  display: block;
 	  vertical-align: middle;
 	  align-content: center;
@@ -1919,7 +1919,7 @@ justify-content: center;
 	.modal-title {
 		font-weight: 600;
 		line-height: 1.2;
-        text-align: center;
+        	text-align: center;
 		letter-spacing: 0.01em;
 		width: 100%;
 		font-size: 1.3em;
@@ -1929,10 +1929,10 @@ justify-content: center;
 
 	.modal-body {
 	padding: 0em 2em 0em 2em;
-	max-width: 1000px;
+	max-width: 960px;
 	border: 1;
-	max-height: calc(100vh - 150px);
-	text-align: left;
+	max-height: 75vh;
+	overflow-y: auto;
 	}
 
 	.modal-footer {
@@ -1953,7 +1953,7 @@ justify-content: center;
 
 .carousel-item {
     height: 100%;
-    max-width: 1000px;
+    max-width: 960px;
     object-fit: scale-down;
     object-position: center;
 }
@@ -2011,7 +2011,7 @@ justify-content: center;
 }
 
 /* -----------------------------------------------
-             CAROUSEL RESPONSIVE
+             RESPONSIVE CAROUSEL
 -------------------------------------------------- */
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
@@ -2020,14 +2020,26 @@ justify-content: center;
     font-size: 1.25rem;
     line-height: 1.4;
   }
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 480px) {
+  .carousel-item img {
+    height: 30vh;
+   }
 
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
 
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
+  .modal-body {
+	padding: 0em 1em 0em 1em;
+	border: 1;
+	max-height: 75vh;           /* Max body height 75% of screen */
+	overflow-y: auto;
+	}
+
+  .modal-body p {
+	padding: 0em 1em 0em 1em;
+	font-size: .9em;
+	}
+
+	.modal-title {
+		font-size: 1.1em;
+	}
 }
