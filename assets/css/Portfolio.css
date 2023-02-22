@@ -138,18 +138,15 @@ input, select, textarea {
 		}
 
 	a {
-		/*-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		*/text-decoration: none;
+	    text-decoration: none;
 		color: #585858;
-		border-bottom: dotted: 0px #ffcc5f;
+		border-bottom: dotted 2.1px #8da0a5;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffcc5f;
+			color: #8da0a5 !important;
+			font-weight: 900;
 		}
 
 	strong, b {
@@ -850,8 +847,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #ffcc5f !important;
-			box-shadow: inset 0 0 0 2px #ffcc5f;
+			color: #8da0a5 !important;
+			box-shadow: inset 0 0 0 2px #8da0a5;
 		}
 
 		input[type="submit"]:active,
@@ -893,7 +890,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ffcc5f;
+				background-color: #8da0a5;
 			}
 
 			input[type="submit"].primary:active,
@@ -1116,13 +1113,21 @@ input, select, textarea {
 	        letter-spacing: 0em;
 	    }
 
-			#header nav ul li a {
-				padding: 0 0em 0 1em;
-				font-size: 0.6em;
-				font-weight: 900;
-				letter-spacing: 0em;
-				text-transform: uppercase;
+	    	#header .title:hover {
+				font-size: .7em;
 			}
+
+			    #header nav ul li a {
+				    padding: 0 0em 0 1em;
+				    font-size: 0.6em;
+				    font-weight: 900;
+				    letter-spacing: 0em;
+				    text-transform: uppercase;
+			    }
+
+				    #header nav ul li a:hover {
+					    font-size: .6em;
+					}
 }
 
 
@@ -1622,9 +1627,9 @@ justify-content: center;
 }
 
 .btn:hover {
-    color: #ffcc5f !important;
+    color: #8da0a5 !important;
     background-color: transparent;
-    box-shadow: inset 0 0 0 .5px #ffcc5f;
+    box-shadow: inset 0 0 0 .5px #8da0a5;
 }
 
 /* -----------------------------------------------
@@ -1769,7 +1774,7 @@ justify-content: center;
   outline: 0;
   opacity: 0.5;
   box-shadow: inset 0 0 0 2px #ffcc5f;
-  background-color: #ffcc5f !important;
+  background-color: #8da0a5 !important;
 }
 
 /* -----------------------------------------------
