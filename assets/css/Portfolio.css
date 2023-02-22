@@ -138,15 +138,18 @@ input, select, textarea {
 		}
 
 	a {
-	    text-decoration: none;
+		/*-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		*/text-decoration: none;
 		color: #585858;
-		border-bottom: dotted 2.1px #8da0a5;
+		border-bottom: dotted: 0px #8da0a5;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #8da0a5 !important;
-			font-weight: 900;
+			color: #8da0a5;
 		}
 
 	strong, b {
@@ -882,7 +885,7 @@ input, select, textarea {
 		.button.primary {
 			box-shadow: none;
 			background-color: #585858;
-			color: #ffffff !important;
+			color: #8da0a5 !important;
 		}
 
 			input[type="submit"].primary:hover,
@@ -1113,23 +1116,14 @@ input, select, textarea {
 	        letter-spacing: 0em;
 	    }
 
-	    	#header .title:hover {
-				font-size: .7em;
+			#header nav ul li a {
+				padding: 0 0em 0 1em;
+				font-size: 0.6em;
+				font-weight: 900;
+				letter-spacing: 0em;
+				text-transform: uppercase;
 			}
-
-			    #header nav ul li a {
-				    padding: 0 0em 0 1em;
-				    font-size: 0.6em;
-				    font-weight: 900;
-				    letter-spacing: 0em;
-				    text-transform: uppercase;
-			    }
-
-				    #header nav ul li a:hover {
-					    font-size: .6em;
-					}
 }
-
 
 /* -----------------------------------------------
                     MENU
@@ -1159,7 +1153,7 @@ input, select, textarea {
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
 		background: #8da0a5;
-		color: #ffffff;
+		color: #8da0a5;
 		cursor: default;
 		visibility: hidden;
 		z-index: 10002;
@@ -1580,8 +1574,8 @@ input, select, textarea {
 }
 
 .card-text {
-text-align: center;
-justify-content: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .card-img {
@@ -1770,16 +1764,17 @@ justify-content: center;
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  color: #ffcc5f !important;
+  color: #8da0a5 !important;
   outline: 0;
   opacity: 0.5;
-  box-shadow: inset 0 0 0 2px #ffcc5f;
+  box-shadow: inset 0 0 0 2px #8da0a5;
   background-color: #8da0a5 !important;
 }
 
 /* -----------------------------------------------
              RESPONSIVE CAROUSEL
 -------------------------------------------------- */
+
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 480px) {
   .carousel-item img {
