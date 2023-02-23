@@ -239,6 +239,18 @@ input, select, textarea {
 			color: inherit;
 		}
 
+	p a {
+	    text-decoration: none;
+		color: #585858;
+		border-bottom: dotted 2.1px #8da0a5;
+	}
+
+		p a:hover {
+			border-bottom-color: transparent;
+			color: #8da0a5 !important;
+			font-weight: 900;
+		}
+
 		h5 a, img a {
 		    color: #585858 !important;
 		    opacity: 0.5;
