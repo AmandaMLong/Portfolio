@@ -120,7 +120,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 			body, input, select, textarea {
-				font-size: 15pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -128,18 +128,11 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 14pt;
-			}
-
-		}
-
-		@media screen and (max-width: 576px) {
-
-			body, input, select, textarea {
 				font-size: 12pt;
 			}
 
 		}
+
 
 	a {
 		text-decoration: none;
