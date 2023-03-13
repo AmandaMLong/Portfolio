@@ -853,8 +853,6 @@ input, select, textarea {
 @media screen and (max-width: 576px) {
 
 	#header {
-		padding: 0.5em 0 0.1em 0 ;
-		background: rgba(157, 178, 184, 0.3);
 		height: 2.5em;
 	}
 
