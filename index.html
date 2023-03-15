@@ -203,7 +203,24 @@
                               </div>
                            </div>
                         </div>
-
+				
+    <!-- CORRIDOR TERMINI -->
+                        <div class="col">
+                           <div class="card text-center">
+                              <div class="card-body">
+                                 <a href="#Corridors" data-bs-toggle="modal" data-bs-target="#Corridors">
+                                     <img src="images\Thumbnails\KS Patch-Corridor.jpg" class="card-img">
+                                     <div class="d-flex justify-content-between align-items-center">
+                                         <div class="card-footer">
+                                             <a href="#Corridors" data-bs-toggle="modal" data-bs-target="#Corridors">
+                                                 <h5 class="card-title">Identifying Corridor Termini</h5></a>
+                                         </div>
+                                     </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+				
     <!-- RESISTANCE RASTERS -->
                         <div class="col">
                            <div class="card text-center">
@@ -237,24 +254,6 @@
                               </div>
                            </div>
                         </div>
-
-    <!-- CORRIDOR TERMINI
-                        <div class="col">
-                           <div class="card text-center">
-                              <div class="card-body">
-                                 <a href="#Corridors" data-bs-toggle="modal" data-bs-target="#Corridors">
-                                     <img src="images\Thumbnails\KS Patch-Corridor.jpg" class="card-img">
-                                     <div class="d-flex justify-content-between align-items-center">
-                                         <div class="card-footer">
-                                             <a href="#Corridors" data-bs-toggle="modal" data-bs-target="#Corridors">
-                                                 <h5 class="card-title">Identifying Corridor Termini</h5></a>
-                                         </div>
-                                     </div>
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-    -->
 
 
                     </div>
@@ -526,7 +525,7 @@
     <div class="modal-content">
       <div class="modal-header">
 
-        <h4 class="modal-title" id="Delineations\">Delineating Patch-Corridor-Matrix Boundaries</h4>
+        <h4 class="modal-title" id="Delineations\">Digitizing Forest and Rangeland Boundaries</h4>
         <span class="close" data-bs-dismiss="modal" aria-label="Close">&times;</span></button>
       </div>
         <div id="carouselDelineations" class="carousel slide">
@@ -552,19 +551,21 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <p>As part of my MS thesis research,
+                            <p>Current corridor literature lacks a unified method to delineate landscape
+                                elements for spatial models. As part of my MS thesis research,
                             <i>Conservation, Connectivity, and Coexistence:
                             Understanding Corridor Efficacy in Fragmented Landscapes</i>,
-                            I digitized landscape elements along contiguous forest
-                            and rangeland edges in Kansas, Idaho, and Czechia by integrating
-                            field data with remotely sensed data.</p>
+                            I standardized the digitization of forest and rangeland boundaries by
+                                integrating field GPS data with satellite imagery and analyzing vegetation.</p>
+                            <p>Delineations were used to quantify and analyze landscape connectivity between
+                            corridor complexes (patch-corridor-patch), intact reference areas, and isolated patches.</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm">
                             <p><b>Skills</b></p>
-                            <p>Digitization, Image Analysis, Remote Sensing,
-                                Vegetation Analysis</p>
+                            <p>Digitization, Image Analysis, Remote Sensing, 
+				    Spatial Analysis, Vegetation Analysis</p>
                         </div>
                         <div class="col-sm">
                             <p><b>Software</b></p>
@@ -572,7 +573,7 @@
                         </div>
                         <div class="col-sm">
                             <p><b>Data</b></p>
-                            <p>GPS, Landsat 8 OLI/TIRS</p>
+                            <p>GPS (Small Mammal Traps), Landsat 8 OLI/TIRS</p>
                         </div>
                     </div>
                 </div>
@@ -589,7 +590,84 @@
   </div>
 </div>
 
+        <!-- CORRIDOR TERMINI -->
+<div class="modal fade" id="Corridors" tabindex="-1" aria-labelledby="Corridors" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
 
+        <h4 class="modal-title" id="Corridors\">Where Does A Corridor Start and End?</h4>
+        <span class="close" data-bs-dismiss="modal" aria-label="Close">&times;</span></button>
+      </div>
+        <div id="carouselCorridors" class="carousel slide">
+            <div class="modal-body">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCorridors" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCorridors" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images\Thesis Figures\KS Patch-Corridor.jpg" class="d-block w-100" alt="..."></div>
+                                <div class="carousel-item">
+                                    <img src="images\Thesis Figures\ID Patch-Corridor.jpg" class="d-block w-100" alt="..."></div>
+                                <div class="carousel-item">
+                                    <img src="images\Thesis Figures\CZ Dacice Patch-Corridor.jpg" class="d-block w-100" alt="..."></div>
+                                <div class="carousel-item">
+                                    <img src="images\Thesis Figures\CZ Knezice.jpg" class="d-block w-100" alt="..."></div>
+                                <div class="carousel-item">
+                                    <img src="images\Thesis Figures\CZ Skorpion.jpg" class="d-block w-100" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <p>
+                            Understanding conservation corridor efficacy depends on identifying the
+                                start and end. For my MS thesis, <i>Conservation, Connectivity, and Coexistence:
+                                Understanding Corridor Efficacy in Fragmented Landscapes</i>, I used
+                                spatial and statistical analysis to identify transitional areas,
+                                where edge effects are expected to influence species movements,
+                                of 5 previously digitized corridor complexes. Patch one narrows into the
+                                corridor at 1 and 2 the corridor widens into patch two and 3 and 4.</p>
+                            <p>This process raises the question, do we need to manage corridors distinctly from patches or
+                                extend management into patches to promote corridor efficacy?</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <p><b>Skills</b></p>
+                            <p>Breakpoint Analysis, Spatial Analysis, Topographic Production
+                            </p>
+                        </div>
+                        <div class="col-sm">
+                            <p><b>Software</b></p>
+                            <p>ArcGIS Pro, Excel, ModelBuilder, Python, R</p>
+                        </div>
+                        <div class="col-sm">
+                            <p><b>Data</b></p>
+                            <p>Digitized Landscape Boundaries (Corridor Complexes)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCorridors" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCorridors" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCorridors" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselCorridors" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselCorridors" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
 
     <!-- RESISTANCE RASTERS -->
 <div class="modal fade" id="Resistance" tabindex="-1" aria-labelledby="Resistance" aria-hidden="true">
