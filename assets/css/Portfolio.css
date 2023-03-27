@@ -226,13 +226,23 @@ input, select, textarea {
     }
 
 	h6 {
-		font-weight: 600;
-		line-height: .3;
-		margin: 1.8rem 0 .5em 0;
-        	text-align: left;
-		letter-spacing: 0.02em;
+		font-weight: 500;
+		line-height: 0.2;
+		letter-spacing: 0.01em;
+		text-align: left;
+		width: 100%;
+		text-align: center;
+		border-bottom: 0.5px solid #c9c9c9;
+		margin: 10px 0 20px;
+		color: #8da0a5 !important;
 		font-size: 1.5em;
+		margin-top: 20px;
 	}
+
+    h6 span {
+        background:#fff;
+        padding:0 10px;
+    }
 
 		h1, h2 a, h3 a, h4 a, h6 a {
 			color: inherit;
