@@ -262,14 +262,30 @@
                                      <div class="d-flex justify-content-between align-items-center">
                                          <div class="card-footer">
                                              <a href="#Resistance" data-bs-toggle="modal" data-bs-target="#Resistance">
-                                                 <h5 class="card-title">Raster Creations for Resistance-based Connectivity Modeling</h5>
+                                                 <h5 class="card-title">Creating Resistance Rasters for Modeling Landscape Connectivity</h5>
                                          </div>
                                      </div>
                                  </a>
                               </div>
                            </div>
                         </div>
-
+				
+    <!-- LANDSCAPE CONNECTIVITY -->
+                        <div class="col">
+                           <div class="card text-center">
+                              <div class="card-body">
+                                 <a href="#Connectivity" data-bs-toggle="modal" data-bs-target="#Connectivity">
+                                     <img src="images\Thumbnails\Connectivity.jpg" class="card-img">
+                                     <div class="d-flex justify-content-between align-items-center">
+                                         <div class="card-footer">
+                                             <a href="#Connectivity" data-bs-toggle="modal" data-bs-target="#Connectivity">
+                                                 <h5 class="card-title">Quantifying Landscape Connectivity</h5>
+                                         </div>
+                                     </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
                     </div>
                 </div>
 
@@ -869,7 +885,7 @@
     <div class="modal-content">
       <div class="modal-header">
 
-        <h4 class="modal-title" id="Resistance\">Rasters for Resistance-based Connectivity Modeling</h4>
+        <h4 class="modal-title" id="Resistance\">Creating Resistance Rasters to Model Landscape Connectivity</h4>
         <span class="close" data-bs-dismiss="modal" aria-label="Close">&times;</span></button>
       </div>
         <div id="carouselResistance" class="carousel slide">
@@ -1008,16 +1024,6 @@
   </div>
 </div>
 
-    <!--
-                                    <img src="images\Thesis Figures\ID Delineations.jpg" class="d-block w-100" alt="..."></div>
-                                    <img src="images\Thesis Figures\CZ Delineations.jpg" class="d-block w-100" alt="..."></div>
-
-                                    <img src="images\Thesis Figures\ID LC2.jpg" class="d-block w-100" alt="..."></div>
-                                    <img src="images\Thesis Figures\CZ LC.jpg" class="d-block w-100" alt="..."></div>
-
-                                    <img src="images\Thesis Figures\ID Resistance Config.jpg" class="d-block w-100" alt="..."></div>
-                                    <img src="images\Thesis Figures\CZ Resistance Config.jpg" class="d-block w-100" alt="..."></div>
-    -->
 
         <!-- STEPPINGSTONES OF FELIDAE DISPERSAL -->
 <div class="modal fade" id="Felidae" tabindex="-1" aria-labelledby="Felidae" aria-hidden="true">
@@ -1096,23 +1102,77 @@
   </div>
 </div>
 
-
-<div class="modal fade" id="EIA" tabindex="-1" aria-labelledby="EIA" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <!-- LANDSCAPE CONNECTIVITY -->
+<div class="modal fade" id="Connectivity" tabindex="-1" aria-labelledby="Connectivity" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title fs-5" id="EIA\">Environmental Impact Assessments</h4>
+
+        <h4 class="modal-title" id="Connectivity\">Quantifying Landscape Connectivity for Small Mammals</h4>
         <span class="close" data-bs-dismiss="modal" aria-label="Close">&times;</span></button>
       </div>
-      <div class="modal-body">
-         <embed src="docs/EIA Course Portfolio - AML.pdf#toolbar=0" type="application/pdf" height="625px" width="500">
-      </div>
-      <div class="modal-footer">
-          <p>text here</p>
-      </div>
+        <div id="carouselConnectivity" class="carousel slide">
+            <div class="modal-body">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselConnectivity" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselConnectivity" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images\Thesis Figures\KS Connectivity.jpg" class="d-block w-100" alt="..."></div>
+                                <div class="carousel-item">
+                                    <img src="images\Thesis Figures\ID Connectivity.jpg" class="d-block w-100" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <p>As part of my MS thesis,
+                            <i>Conservation, Connectivity, and Coexistence:
+                            Understanding Corridor Efficacy in Fragmented Landscapes</i>,
+                                I used cost distance and current flow models to quantify landscape connectivity
+                                for small mammal focal species between:
+                                (a) corridor start and end, (b) patches connected by a
+                                corridor, (c) intact reference area, and (d) isolates separated by a matrix.
+                                The least-cost path (LCP) identified the optimal path of the lowest cost between
+                                landscape configurations whereas the current flow identified a network of all
+                                potential paths.</p>
+                            <p>High current flow indicates areas with a higher degree of landscape connectivity and lower
+                                resistance.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <p><b>Skills</b></p>
+                            <p>Land Management, Small Mammal Behavior, Spatial Analysis</p>
+                        </div>
+                        <div class="col-sm">
+                            <p><b>Software</b></p>
+                            <p>ArcGIS Pro, Circuitscape, Excel, Julia</p>
+                        </div>
+                        <div class="col-sm">
+                            <p><b>Data</b></p>
+                            <p>Digitized Landscape Boundaries, Resistance Rasters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselConnectivity" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselConnectivity" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 </div>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
