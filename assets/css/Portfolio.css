@@ -1827,3 +1827,64 @@ input, select, textarea {
 		font-size: 1.1em;
 	}
 }
+
+/* -----------------------------------------------
+                    GALLERY
+-------------------------------------------------- */
+#gallery {
+   line-height:0;
+   -webkit-column-count:2; /* split it into 4 columns */
+   -webkit-column-gap:10px; /* give it a 5px gap between columns */
+   -moz-column-count:2;
+   -moz-column-gap:10px;
+   column-count:2;
+   column-gap:10px;
+}
+
+#gallery img {
+   width: 100% !important;
+   height: auto !important;
+   margin-bottom:10px; /* to match column gap
+}
+
+#gallery img:hover {
+   color: #585858 !important;
+   opacity: 0.5;*/
+}
+
+#gallery caption {
+    width:100%;
+    height:100%;
+    position:absolute;
+    justify-content:center;
+    background:rgba(0, 0, 0, 0.7);
+    position:absolute;
+    opacity:0;
+    transition:opacity 0.3s;
+}
+
+#gallery:hover .caption {
+  opacity:1;
+  display: block;
+}
+
+
+/* -----------------------------------------------
+               RESPONSIVE GALLERY
+-------------------------------------------------- */
+@media (min-width: 980px) {
+   #gallery {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+   }
+}
+
+@media (max-width: 480px) {
+   #gallery {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+   }
+}
+
