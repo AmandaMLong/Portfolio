@@ -1839,6 +1839,8 @@ input, select, textarea {
    -moz-column-gap:10px;
    column-count:2;
    column-gap:10px;
+   padding-top: 20px;
+   padding-bottom: 50px;
 }
 
 #gallery img {
